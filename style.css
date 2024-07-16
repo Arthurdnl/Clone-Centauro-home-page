@@ -1,0 +1,361 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+header {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    top: 0;
+    background-color: rgb(227, 0, 0);
+    justify-content: center;
+    gap: 1.5%;
+    padding: 1%;
+    position: sticky;
+}
+#centauro-logo {
+    width: 10%;
+    cursor: pointer;
+}
+#buscar {
+    width: 40%;
+    padding: 1%;
+    border-radius: 5px;
+    border: none;
+}
+
+
+
+#user-logo {
+    width: 2.5%;
+    cursor: pointer;
+}
+header p {
+    padding: 15px; 
+    color: white;
+    font-size: 15px;
+    font-weight: bolder;
+    cursor: pointer;
+}
+#estrela-logo, #carrinho-logo {
+    width: 1.5%;
+    cursor: pointer;
+}
+#lupa-logo{
+    width: 2%;
+    cursor: pointer;
+}
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+    padding: 1%;
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0.3);
+}
+nav a {
+    text-decoration: none;
+    color: black;
+}
+nav ul {
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+}
+nav ul li {
+    font-size: 13.5px;
+    font-weight: bolder;
+    text-decoration: none;
+}
+#outlet {
+    color: rgb(227, 0, 0);
+}
+#copa-america {
+    background-color: rgb(227, 0, 0);
+    padding: 15px;
+    color: white;
+    border-radius: 5px;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px;
+    max-width: 1480px;
+    margin: 0 auto;
+    flex-wrap: wrap;
+
+}
+
+/* @media (min-width: 1400px) {
+    main{
+        max-width: 1400px;
+    }
+} */
+
+
+#banner2-3{
+    display: flex;
+    padding-top: 30px;
+    gap: 16px;
+    box-sizing: border-box;
+    
+}
+#banner4{
+    display: flex;
+    padding-top: 30px;
+  
+}
+#cupons{
+    display: flex;
+    flex-direction: row;
+    padding-top: 30px;
+    gap: 20px;
+    object-fit: cover;
+
+}
+#banner1 img , #banner2-3 img, #banner4 img, #cupons img{
+    cursor: pointer;
+}
+
+.ofertastxt{
+    font-size: 20px;
+    font-weight: bolder;
+    display: flex;
+    flex-direction: column;
+    align-self: start;
+    gap: 10px;
+    padding-top: 30px;
+}
+.ofertastxt p{
+    font-size: 15px;
+}
+
+#ofertadiaimg{
+    display: flex;
+    flex-direction: row;
+    padding-top: 30px;
+    gap: 16px;
+    box-sizing: border-box;
+    justify-content: center;
+
+}
+#ofertadiaimg img{
+    cursor: pointer;
+    width: 35%;
+}
+
+
+#imperdiveis{
+    display: flex;
+    flex-direction: row;
+    padding-top: 30px;
+    gap: 20px;
+    cursor: pointer;
+    object-fit: cover;
+}
+#vaidenike{
+    display: flex;
+    padding-top: 30px;
+    cursor: pointer;
+
+}
+#copatorcedor{
+    display: flex;
+    padding-top: 30px;
+    cursor: pointer;
+
+}
+
+.carrossel{
+
+    overflow: hidden;
+    height: 100px;
+    width: 1100px;
+    display: block;
+    padding-top: 40px;
+    z-index: -1;
+
+
+}
+
+.container{
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    transform: translateX(0);
+    gap: 20px;
+}
+.container img{
+    object-fit: cover;
+    width: 120px;
+}
+
+#lancamento{
+    display: flex;
+    padding-top: 40px;
+    cursor: pointer;
+}
+
+#bannersLanc{
+    display: flex;
+    padding-top: 30px;
+    gap: 15px;
+}
+#bannersLanc img{
+    cursor: pointer;
+}
+
+#inscricao{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+
+}
+
+#formulario{
+    display: flex;
+    padding-top: 30px;
+    flex-direction: row;
+    gap: 15px;
+    background-color:rgb(243, 243, 243);
+    align-items: center;
+    padding: 15px;
+    width: 80%;
+}
+
+#formtxt{
+    display: flex;
+    flex-direction: column;
+
+}
+#form input{
+
+    border-radius: 5px;
+    width: 350px;
+    height: 50px;
+    padding: 10px;
+}
+
+#form input:placeholder{
+    font-weight: bold;
+    font-size: 2rem;
+}
+#form {
+    gap: 10px;
+    display: flex;
+    flex-direction: column;
+}
+#form label{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+    width: 30px;
+    
+}
+
+
+#btnform{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+
+}
+#btnform button{
+    font-size: 18px;
+    background-color: rgb(227, 0, 0);
+    color: #fff;
+    border-radius: 12px;
+    border: none;
+    width: 350px;
+    height: 50px;
+    cursor: pointer;
+
+}
+#btnform p{
+    font-size: 11px;
+    font-weight: bolder;
+}
+#celular{
+    cursor: pointer;
+    width: 30%;
+    gap: 15px;
+    display: flex;
+    flex-direction: row;
+    background-color:rgb(243, 243, 243);
+    align-items:center ;
+    justify-content: center;
+    text-align: justify;
+
+}
+#celular img{
+    width: 20%;
+}
+
+footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px;
+    max-width: 1480px;
+    margin: 0 auto;
+    flex-wrap: wrap;
+    
+    
+    
+}
+
+#info1{
+    display: flex;
+    flex-direction: row;
+    text-align: start;
+    gap: 75px;
+}
+
+.rodape1{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+footer p {
+    font-size: 13.5px;
+    cursor: pointer;
+}
+hr{
+    width: 100%;
+    color: rgba(0, 0, 0, 0.3);
+}
+
+#info2{
+    display: flex;
+    flex-direction: row;
+    padding: 20px;
+}
+#pagamento{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+#pagamento img{
+    width: 45%;
+    cursor: pointer;
+}
+
+#social img{
+    width: 30px;
+    cursor: pointer;
+}
